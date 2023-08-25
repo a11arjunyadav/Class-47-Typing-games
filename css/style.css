@@ -1,0 +1,24 @@
+.a_tbdr{
+    border: 1px Dashed red;
+}
+.a_mysection{
+    transform: scale(0.8,0.8);
+    border: 7px solid #6551C4 !important;
+}
+.a_cont{
+    height: 730px;
+}
+.a_33{
+    height: 240px;
+}
+.a_33_c{
+    background-image: url("../img/hand2.png");
+   /* background-color: E6FAC6 !important;*/
+    background-repeat: no-repeat;
+    background-size: contain !important; 
+    background-position: center bottom;
+   /* overflow:  hidden !important;*/
+}
+.a_33_A{
+    height: 220px;
+}
