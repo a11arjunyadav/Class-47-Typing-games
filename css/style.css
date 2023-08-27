@@ -2,25 +2,26 @@
     border: 1px Dashed red;
 }
 .a_mysection{
-    transform: scale(0.8,0.8);
+    /*transform: scale(0.8,0.8);*/
     border: 7px solid #6551C4 !important;
 }
 .a_cont{
-    height: 730px;
+    /*height: 730px;*/
 }
 .a_33{
-    /*height: 240px;*/ 
+    height: 310px; 
 }
 .a_33_c{
     background-image: url("../img/hand.png");
    /* background-color: E6FAC6 !important;*/
     background-repeat: no-repeat;
-    background-size: contain !important; 
+    background-size: contain !important;
     background-position: center bottom;
    /* overflow:  hidden !important;*/
+   height: 220px;
 }
 .a_33_A{
-    height: 220px;
+    height: 150px;
 }
 .a_1{
     width: 50px;
@@ -29,3 +30,7 @@
     background-color: #B8C4ff;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.7);
 }
+.a_44{
+    float: bottom !important;
+}
+
