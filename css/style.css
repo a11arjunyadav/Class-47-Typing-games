@@ -4,6 +4,7 @@
 .a_mysection{
     /*transform: scale(0.8,0.8);*/
     border: 7px solid #6551C4 !important;
+    background-color: #D2F59F;
 }
 .a_cont{
     /*height: 730px;*/
@@ -12,13 +13,13 @@
     height: 310px; 
 }
 .a_33_c{
-    background-image: url("../img/hand.png");
+    /*background-image: url("../img/hand.png");
    /* background-color: E6FAC6 !important;*/
-    background-repeat: no-repeat;
+   /* background-repeat: no-repeat;
     background-size: contain !important;
     background-position: center bottom;
    /* overflow:  hidden !important;*/
-   height: 220px;
+   height: 270px;
 }
 .a_33_A{
     height: 150px;
@@ -28,9 +29,27 @@
     height: 50px;
     border-style: outset !important;
     background-color: #B8C4ff;
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.8);
 }
-.a_44{
-    float: bottom !important;
+.a_keybord{
+    transform: scale(1.03);
 }
-
+.a_active{
+    transform: translate(2px,2px);
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.8);
+}
+.a_3{
+    height: 730px !important;
+}
+.a_margine{
+    margin-top: 300px;
+}
+.a_circle{
+    /*display: none;*/
+    width: 30px;
+    height: 30px;
+}
+.a_p{
+    margin-right: 410px;
+    margin-top: 85px;
+}
