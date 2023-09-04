@@ -42,14 +42,17 @@
     height: 730px !important;
 }
 .a_margine{
-    margin-top: 300px;
+    margin-top: 260px !important;
 }
 .a_circle{
-    /*display: none;*/
     width: 30px;
     height: 30px;
 }
 .a_p{
     margin-right: 410px;
     margin-top: 85px;
+    display: none;
+}
+.a_b:hover{
+    color: green !important;
 }
