@@ -6,6 +6,7 @@
                //object.method()
     let fn = document.getElementById("first_name").value;
     let ln = document.getElementById('last_name').value;
+    let dur = document.querySelector('.a_mySelected').value;
 
 
     console.log(fn);
@@ -13,6 +14,7 @@
     
     window.localStorage.setItem("firs_name",fn);
     window.localStorage.setItem('last_name',ln);
+    window.localStorage.setItem('duration',dur);
     // page reload
     window.location.reload();
 
@@ -30,6 +32,46 @@
         at.play();     
     }
 
+    let start = ()=>{
+      // Built-in fungtion
+        // Set the date we're counting down to
+        var nextTime = new Date().getTime();
+        nextTime = new Date(nextTime + (localStorage.getItem('duration')*60* 1000)); // add 1 hurse
+        
+        // Create a Date object representing your DateTime
+        var myDate = new Date(nextTime); // Replace with your DateTime
+
+         //  Convert the Date object to a Unix timestamp in seconds
+        var unixTimestamp = Math.floor(myDate.getTime() / 1000)*1000;
+
+         // Display the Unix timestamp  
+        
+        setInterval(function(){
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Calculate the next time by adding minutesToAdd to the current time
+            console.log('Next Time', unixTimestamp);
+            console.log('Current Time',now);
+
+            // Find the distance between now and the count down date
+            var distance = unixTimestamp - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.querySelector(".a_duration").innerHTML = minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.querySelector(".a_duration").innerHTML = "EXPIRED";
+  }
+
+        },1000)  
+    }
 
 // ()();  IIFE
 (()=>{
@@ -111,6 +153,23 @@
            // document.querySelector('.a_p').style.display ="none";
         })
 
+        /*
+        for (expression 1; condition; increment++/decrement) {
+            // code block to be executed
+        }
+        */
+        var o ='';
+        for(var i=1; i<=60; i++){  
+            o = o + `<option value="${i}">${i}</option>`;
+        }
+        console.log(o);
+        console.log(document.querySelector('.a_mySelected'));
+        document.querySelector('.a_mySelected').innerHTML = o;
+
+    
+        document.querySelector('.a_duration').innerHTML = localStorage.getItem('duration') === null ?'':localStorage.getItem('duration')+':00';
+
+        
 })();
     
 
