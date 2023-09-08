@@ -2,7 +2,7 @@
     border: 1px Dashed red;
 }
 .a_mysection{
-    /*transform: scale(0.8,0.8);*/
+   /* transform: scale(0.8,0.8);*/
     border: 7px solid #6551C4 !important;
     background-color: #D2F59F;
 }
@@ -32,7 +32,7 @@
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.8);
 }
 .a_keybord{
-    transform: scale(1.03);
+    /*transform: scale(1.03);*/
 }
 .a_active{
     transform: translate(2px,2px);
@@ -55,8 +55,4 @@
 }
 .a_b:hover{
     color: green !important;
-}
-.a_modal{
-    
-    margin-bottom: 200px !important;
 }
