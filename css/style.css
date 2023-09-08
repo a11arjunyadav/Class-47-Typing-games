@@ -7,10 +7,10 @@
     background-color: #D2F59F;
 }
 .a_cont{
-    /*height: 730px;*/
+   /* height: 730px !important;*/
 }
 .a_33{
-    height: 310px; 
+    height: 310px !important; 
 }
 .a_33_c{
     /*background-image: url("../img/hand.png");
@@ -19,10 +19,10 @@
     background-size: contain !important;
     background-position: center bottom;
    /* overflow:  hidden !important;*/
-   height: 270px;
+   height: 270px !important;
 }
 .a_33_A{
-    height: 150px;
+    height: 150px !important;
 }
 .a_1{
     width: 50px;
@@ -55,4 +55,8 @@
 }
 .a_b:hover{
     color: green !important;
+}
+.a_modal{
+    
+    margin-bottom: 200px !important;
 }
